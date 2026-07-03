@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy both sites to GitHub Pages
 
 on:
   push:
@@ -23,12 +23,37 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Zongheng
+        run: |
+          cp index.html root-site-index.html
+          cp zongheng-source.html index.html
+          npm run build
+          mv root-site-index.html index.html
+
+      - name: Assemble both sites
+        run: |
+          mkdir _site
+          rsync -a --exclude '.git' --exclude '.github' --exclude 'node_modules' --exclude 'src' --exclude 'dist' --exclude '_site' --exclude 'zongheng-source.html' --exclude 'source-index.html' ./ _site/
+          mkdir -p _site/zongheng
+          cp -r dist/* _site/zongheng/
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: Upload complete static site
+
+      - name: Upload both sites
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
+
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
