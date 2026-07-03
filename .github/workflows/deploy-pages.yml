@@ -1,4 +1,4 @@
-name: Deploy both sites to GitHub Pages
+name: Build Zongheng for branch Pages
 
 on:
   push:
@@ -6,20 +6,16 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
-  pages: write
-  id-token: write
+  contents: write
 
 concurrency:
-  group: pages
-  cancel-in-progress: true
+  group: zongheng-build
+  cancel-in-progress: false
 
 jobs:
-  deploy:
+  build:
+    if: ${{ !contains(github.event.head_commit.message, '[skip zongheng deploy]') }}
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -39,21 +35,12 @@ jobs:
           npm run build
           mv root-site-index.html index.html
 
-      - name: Assemble both sites
+      - name: Commit Zongheng site under /zongheng/
         run: |
-          mkdir _site
-          rsync -a --exclude '.git' --exclude '.github' --exclude 'node_modules' --exclude 'src' --exclude 'dist' --exclude '_site' --exclude 'zongheng-source.html' --exclude 'source-index.html' ./ _site/
-          mkdir -p _site/zongheng
-          cp -r dist/* _site/zongheng/
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload both sites
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: _site
-
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v4
+          rm -rf zongheng
+          cp -r dist zongheng
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add zongheng
+          git commit -m "Publish 纵横 website [skip zongheng deploy]"
+          git push
