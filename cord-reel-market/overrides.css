@@ -1,0 +1,2 @@
+.screen{background:#edf0f1}.screen::before{content:attr(data-brand);position:absolute;inset:0;display:grid;place-items:center;padding:20px;color:#7d888e;font:500 18px/1.2 var(--mono);letter-spacing:-.04em;text-align:center}.screen img{position:relative;z-index:1;opacity:0;font-size:0;color:transparent}.screen img.loaded{opacity:1}.screen::after{content:'公开产品页视觉';position:absolute;z-index:2;right:7px;bottom:7px;background:rgba(30,36,40,.76);color:#fff;padding:3px 5px;font:9px var(--mono);letter-spacing:.04em}
+
