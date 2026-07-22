@@ -1,96 +1,91 @@
-Exit code: 0
-Wall time: 0.5 seconds
-Output:
 <!doctype html>
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Cord Reel 美国线下进店款与新品决策分析" />
-    <title>Cord Reel｜线下进店决策</title>
+    <meta name="description" content="Cord Reel 美国线下货架 SKU 证据与产品决策" />
+    <title>Cord Reel｜真实线下货架与新品决策</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="retail-entry.css" />
+    <link rel="stylesheet" href="shelf-final.css" />
   </head>
   <body>
-    <header class="topbar">
-      <a class="wordmark" href="#top">CORD / REEL <span>RETAIL ENTRY BRIEF</span></a>
-      <nav aria-label="页面导航">
-        <a href="#shelf">进店款</a><a href="#goodyear">高价款</a><a href="#pain">用户痛点</a><a href="#ours">我们自己</a><a href="#recommend">推荐方案</a>
-      </nav>
-      <span class="date">PUBLIC DATA CHECK · 2026.07.21</span>
+    <header class="nav">
+      <a href="#top" class="brand">CORD / REEL <span>US RETAIL SHELF AUDIT</span></a>
+      <nav><a href="#evidence">货架证据</a><a href="#compare">横向比较</a><a href="#gap">品类机会</a><a href="#decision">新品决策</a></nav>
+      <span>UPDATED · 2026.07.22</span>
     </header>
 
     <main id="top">
       <section class="hero">
-        <div class="hero-copy">
-          <h1>不是再做一款 Cord Reel，<br />而是做一款能进线下货架的产品。</h1>
-          <p>本页只讨论美国主要线下家装 / 工具零售链的“进店款”。核心问题是：货架上已有的产品为什么被选择、我们的两款与它们差在哪里、以及下一款该做什么才能真正替代一个位置。</p>
-          <div class="hero-links"><a href="#shelf">查看货架对比 <span>↓</span></a><a href="#recommend">直接看结论 <span>↓</span></a></div>
+        <div>
+          <h1>真正的线下货架，<br />不是一排自动回收器。</h1>
+          <p>根据 Lowe’s Hawthorne（90250）与 Home Depot Spring Hill（34606）的 <b>Pickup / In Stock at Store Today</b> 画面复核：主货架由店牌便携卷盘、长线 Power Station 与自动回收款共同构成。以前把“网页可配送”当成“进店款”的判断，已撤回。</p>
+          <div class="links"><a href="#evidence">查看已证实 SKU ↓</a><a href="#decision">直接看新品结论 ↓</a></div>
         </div>
-        <aside class="hero-decision">
-          <p>本轮结论</p>
-          <strong>做一款新的<br />50ft / 12AWG / 15A Pro</strong>
-          <ul>
-            <li>不是用 50ft / 14AWG 去打 Flexzilla</li>
-            <li>也不是拿现有 50ft / 12AWG 直接对撞 Goodyear</li>
-            <li>而是进入 $129–149 的专业车库空档</li>
-          </ul>
+        <aside>
+          <span>最终方向</span>
+          <strong>新增 75ft / 12-3<br />Portable Power Station Reel</strong>
+          <p>不再优先做 $139 的 50ft / 12AWG 自动回收升级款。</p>
         </aside>
       </section>
 
-      <section class="scope band">
-        <div><span>研究边界</span><h2>线下货架，不把 Amazon / Walmart Marketplace 当作“进店款”</h2></div>
-        <p>样本覆盖 Home Depot、Lowe’s、Menards、Harbor Freight 与 Ace Hardware：它们是可核对到实体门店 / 到店取货网络的主要渠道。Amazon 与 Walmart Marketplace 只作为线上价格压力参考，不混入本次进店判断。价格为 2026-07-21 抓取页可见价；Menards 会按门店显示价格，已明确标记。</p>
+      <section class="rulebar">
+        <b>本页主表的准入规则</b>
+        <p>只有零售商官网的门店自提 / “In Stock at Store Today” 证据才进入主表。配送-only、Marketplace、历史页、或无法确认门店库存的商品，不作为进店款比较对象。</p>
       </section>
 
-      <section id="shelf" class="section">
-        <div class="section-title"><p>01 · SHELF ENTRY AUDIT</p><h2>不同渠道的进店款：卖的不是同一件事</h2><span>“进店原因”为基于 SKU 组合、规格与陈列角色的分析判断，不是零售商官方表述。</span></div>
-        <div class="compare-scroll"><table class="shelf-table">
-          <thead><tr><th>渠道 / 货架位置</th><th>进店款（型号）</th><th>公开价</th><th>为什么它能在店里</th><th>货架优势</th><th>对我方 50ft / 14AWG</th><th>对我方 50ft / 12AWG</th></tr></thead>
+      <section id="evidence" class="section evidence">
+        <header><p>01 · SHELF EVIDENCE</p><h2>两张真实货架，已经改变了品类定义</h2></header>
+        <div class="evidence-grid">
+          <article class="lowes"><span>LOWE’S · HAWTHORNE, CA · 90250</span><h3>店牌 Kobalt 是核心；手摇 / 便携卷盘承担主要购买任务。</h3><ul><li>搜索页启用 “Pickup Today at Hawthorne Lowe’s & nearby stores”。</li><li>Kobalt 80ft / 14-3 为 Bestseller，截图显示附近门店 Pickup。</li><li>Kobalt 75ft / 12-3 Power Station 截图显示 Pickup Today，7 available。</li></ul></article>
+          <article class="homedepot"><span>THE HOME DEPOT · SPRING HILL, FL · 34606</span><h3>Husky 的 50ft / 14-3 与 75ft / 12-3 覆盖自动回收的关键价格梯度。</h3><ul><li>搜索页启用 “In Stock at Store Today”。</li><li>Husky 50ft / 14-3 自动回收：截图显示 $69.98、3 in stock。</li><li>Husky 75ft / 12-3 自动回收：截图显示 $141、2 in stock。</li></ul></article>
+        </div>
+        <p class="note">这是“进店证据”，不是仅仅存在于网站上的 SKU。Lowe’s 和 Home Depot 价格、库存随店铺及日期变化；下表优先采用截图的门店证据，并在链接中保留官方可复核页。</p>
+      </section>
+
+      <section id="compare" class="section table-section">
+        <header><p>02 · VERIFIED IN-STORE LINEUP</p><h2>横向比较：线下货架实际卖什么</h2><span>自动回收 ≠ 整个 Cord Reel 市场。便携 / 手摇 Power Station 需要单独看。</span></header>
+        <div class="table-scroll"><table>
+          <thead><tr><th>零售商 / 门店证据</th><th>型号</th><th>货架形态</th><th>规格与插口</th><th>截图价 / 官网价</th><th>为什么能进店</th><th>与我方的关系</th></tr></thead>
           <tbody>
-            <tr class="store-start"><td rowspan="3"><b>Home Depot</b><small>家装主渠道<br />规格梯度最完整</small></td><td><a href="https://www.homedepot.com/p/332472359" target="_blank" rel="noreferrer">Giraffe Tools DE1014AWGUS</a><small>50ft · 14/3 · 13A · 5 outlets</small></td><td>$84.99</td><td>补齐 $80–100 自动回收的性价比位</td><td>同价带中 5 outlets 是清晰卖点</td><td class="ours">就是我方现款；价格已对齐，但缺少“为什么进店”的差异化证据</td><td>—</td></tr>
-            <tr><td><a href="https://www.homedepot.com/p/332472369" target="_blank" rel="noreferrer">Giraffe Tools DE1512AWGUS</a><small>50ft · 12/3 · 15A · 3 outlets</small></td><td>$125.00</td><td>从通用车库款向 15A 重载升级</td><td>50ft + 12AWG，规格跨过 14AWG 红海</td><td>功率和线径更强，但 14AWG 用 5 outlets 的便利性更直观</td><td class="ours">就是我方现款；已占有好价格，但还没有专业级结构 / 户外叙事</td></tr>
-            <tr><td><a href="https://www.homedepot.com/p/338222908" target="_blank" rel="noreferrer">Goodyear GUR074</a><small>50ft · 12/3 · 15A · 3 outlets</small></td><td>$218.99</td><td>把自动回收从“便利”升级为专业工作站</td><td>防腐钢结构、双调节、室内/外，Goodyear 工业认知</td><td>贵 $134；现款以低价取胜，但无法承接专业溢价</td><td>贵 $94；同线径，不同的材料、使用边界与品牌信任</td></tr>
-            <tr class="store-start"><td><b>Lowe’s</b><small>家庭车库 / 中价带</small></td><td><a href="https://www.lowes.com/pd/LINK2HOME-Link2Home-50-Ft-Auto-Retractable-Extension-Cord-Reel-with-3-Grounded-Outlets-Lighted-Tripe-Tap-14AWG-SJTOW-with-Overload-Protection/5015629867" target="_blank" rel="noreferrer">Link2Home EM-REL-5014GR</a><small>50ft · 14/3 · 13A · SJTOW · 3 outlets</small></td><td>$119.99</td><td>用材料与安装感抬高 14AWG 的货架价值</td><td>自动导线、180° 壁/顶装、3 年保修、耐油/UV/低温线材</td><td>贵 $35；对方把“耐候材料 + 保修”做成支付理由</td><td>14AWG 却卖得接近我方 12AWG，说明讲清使用价值能突破线径定价</td></tr>
-            <tr class="store-start"><td rowspan="2"><b>Menards</b><small>自有品牌 + 分层<br />Rep 要替代 Flexzilla 的主战场</small></td><td><a href="https://www.menards.com/main/electrical/electrical-cords-surge-protectors/extension-cords/flexzilla-reg-50-14-3-3-outlet-retractable-extension-cord-reel/e8140503/p-1642874339509840-c-6410.htm" target="_blank" rel="noreferrer">Flexzilla FZ8140503</a><small>50ft · 14/3 · 13A · 3 outlets</small></td><td>$139.99 list<small>门店价动态</small></td><td>成熟绿色品牌承担“通用、柔韧、好安装”的中端自动回收位</td><td>耐油 SJTOW、4.5ft lead、180° 转动支架、3ft 锁定、ETL</td><td>功能上我方多 2 个插口且价格低；但 Flexzilla 有材质、品牌和安装故事</td><td>我方 12AWG 性能更高，但 60ft/12AWG 的专业位置尚由 Masterforce 占住</td></tr>
-            <tr><td><a href="https://www.menards.com/main/electrical/electrical-cords-surge-protectors/extension-cords/masterforce-trade-60-12-3-retractable-triple-tap-extension-cord-reel/cr8120603-mf/p-60300229132-c-6410.htm" target="_blank" rel="noreferrer">Masterforce CR8120603-MF</a><small>60ft · 12/3 · 15A · triple tap</small></td><td>$169.99<small>11% rebate $151.29</small></td><td>自有专业品牌覆盖 15A / 长线 / 车库工作站</td><td>自调平导线、2ft 锁定、4.5ft lead、15A reset、壁/顶转动</td><td>不是 14AWG 的直接对手</td><td>比我方多 10ft、自动排线与专业感；这是我们需要替代的“位置”</td></tr>
-            <tr class="store-start"><td><b>Harbor Freight</b><small>工具零售低价锚点</small></td><td><a href="https://www.harborfreight.com/electrical/extension-cords-power-strips/extension-cords/30-ft-retractable-cord-reel-66832.html" target="_blank" rel="noreferrer">HFT 66832</a><small>30ft · 16/3 · 10A · triple tap</small></td><td>$44.99</td><td>解决“地面线缆杂乱”的极低价入口</td><td>钢壳、断路器、非卡线滚轮、UL / ETL</td><td>不是同一价格带；不值得用我方结构去价格战</td><td>不是同一应用；它证明钢壳不是高价专属，但配置必须取舍</td></tr>
-            <tr class="store-start"><td><b>Ace Hardware</b><small>社区门店 / 服务溢价</small></td><td><a href="https://www.acehardware.com/p/3011312" target="_blank" rel="noreferrer">Flexzilla FZ8140503</a><small>50ft · 14/3 · 自动回收</small></td><td>$139.99</td><td>同一成熟 SKU 可在服务型门店卖出品牌溢价</td><td>现货服务、品牌熟悉度、专业保护计划</td><td>我方低 $55，但需要更强的售后与门店解释资料</td><td>12AWG 可做升级售卖，而不是低价替换</td></tr>
+            <tr class="group"><td colspan="7">A. PORTABLE / HAND-WIND POWER STATION · 主货架的“长线 + 多插口 + 移动供电”</td></tr>
+            <tr><td><b>Lowe’s</b><small>90250 附近 Pickup</small></td><td><a href="https://www.lowes.com/pd/Kobalt-4-outlet-Kobalt-Black-blue-Cord-Reel-2-USB-W-80ft-14-3-SJTW-Ext-Cord/5001962679" target="_blank" rel="noreferrer">Kobalt LKCRPD733U</a></td><td>便携手摇卷盘<br />金属框架</td><td>80ft · 14/3 SJTW<br />4 AC + 2 USB-A · 13A</td><td><b>$69.98</b></td><td>长线、USB、多插口、终身保修；面向车库、户外、活动与工具使用。</td><td>证明 $70 左右已可买到“80ft + 多插口”的高可见价值；不是我方 50ft 自动回收的直接替代。</td></tr>
+            <tr><td><b>Lowe’s</b><small>90250 · Pickup Today</small></td><td><a href="https://www.lowes.com/pd/Kobalt-4-outlet-Portable-Thermoplastic-Power-Station-Cord-Reel-W-75ft-12-3-Yellow-Sjtw-Cord-with-1-Usb-a-and-1-Usb-c/5014577373" target="_blank" rel="noreferrer">Kobalt LKCRPD832U</a></td><td>便携 Power Station<br />手摇卷盘</td><td>75ft · 12/3 SJTW<br />4 AC + USB-A + USB-C</td><td><b>$147 截图</b><small>官网抓取约 $139.98</small></td><td>75ft / 12-3、6 个供电点、移动把手与店牌信任，完整覆盖重载便携需求。</td><td class="warning">这是我方 50ft / 12AWG 的真正对标：同价附近，对方多 25ft、更多插口与 USB。</td></tr>
+            <tr><td><b>Home Depot</b><small>34606 · In Stock Today</small></td><td><a href="https://www.homedepot.com/b/Electrical-Electrical-Cords-Extension-Cords-Extension-Cord-Reels/Husky/N-5yc1vZc5blZrd" target="_blank" rel="noreferrer">Husky LTS-XP001</a></td><td>便携卷盘<br />多插口端</td><td>50ft · 14/3 · 13A<br />triple tap</td><td><b>$84.98</b></td><td>Best Seller；店牌将“基础长度 + 整理 + 多插口”做成稳定的中价入口。</td><td>与我方 50ft / 14AWG 接近，但 Husky 有线下店牌与货架位置优势。</td></tr>
+            <tr class="group"><td colspan="7">B. WALL / CEILING AUTO-REWIND · 车库、工作台的固定安装便利款</td></tr>
+            <tr><td><b>Lowe’s</b><small>90250 附近 Pickup</small></td><td><a href="https://www.lowes.com/pd/Kobalt-Kobalt-50-Ft-Retractable-Cord-Reel/1002788012" target="_blank" rel="noreferrer">Kobalt PX-303-B</a></td><td>墙装自动回收<br />带支架</td><td>50ft · 14/3 SJT<br />3 AC · 13A</td><td><b>$93.98 截图</b><small>官网抓取约 $89.98</small></td><td>50ft / 14-3、支架、LED、断路器；把自动回收定位为车库便利。</td><td>与我方 50ft / 14AWG 最直接；我方 5 outlets 有优势，但需要证明可靠性和固定安装体验。</td></tr>
+            <tr><td><b>Home Depot</b><small>34606 · 3 in stock</small></td><td><a href="https://www.homedepot.com/b/Electrical-Electrical-Cords-Extension-Cords-Extension-Cord-Reels/Husky/Indoor-Outdoor/N-5yc1vZc5blZrdZ1z11evg" target="_blank" rel="noreferrer">Husky EM-HSK-500N</a></td><td>墙装自动回收</td><td>50ft · 14/3 · 13A<br />4 AC</td><td><b>$69.98</b></td><td>低于 $70 的店牌价格锚点，4 outlets，直接承接家用车库。</td><td class="warning">我方 50ft / 14AWG $84.99 不能只靠“自动回收”竞争；需要 5 outlets、SJTOW、保修或安装体验的明确差异。</td></tr>
+            <tr><td><b>Home Depot</b><small>34606 · 2 in stock</small></td><td><a href="https://www.homedepot.com/b/Electrical-Electrical-Cords-Extension-Cords-Extension-Cord-Reels/Husky/Indoor-Outdoor/N-5yc1vZc5blZrdZ1z11evg" target="_blank" rel="noreferrer">Husky EM-HSK-750N</a></td><td>墙装自动回收</td><td>75ft · 12/3<br />4 AC</td><td><b>$141.00</b></td><td>把“长线 + 粗线 + 自动回收”作为高一档车库工作站。</td><td class="warning">同样约 $140，我方若只有 50ft / 12AWG，就输在长度与插口数量。</td></tr>
+            <tr><td><b>Home Depot</b><small>34606 · In Stock Today</small></td><td><a href="https://www.homedepot.com/s/cord%20reel" target="_blank" rel="noreferrer">HDX EM-REL-300N-HDX</a></td><td>墙装自动回收</td><td>30ft · 16/3<br />3 AC</td><td><b>$59.98</b></td><td>低价、短线、轻负载的整理型入口。</td><td>不与我方直接竞争；它定义了自动回收的最低价格锚点。</td></tr>
           </tbody>
         </table></div>
-        <p class="table-note">线下货架的共性：自动回收只是准入门槛；支架、导线管理、lead-in、断路保护、使用环境、保修与可被销售员解释的品牌故事，才决定“留在货架上的理由”。</p>
+        <p class="note">Utilitech 30ft / 16-3 自动回收曾在你提供的 Lowe’s Pickup 截图中显示 $87.98、2 available；但官网当前已显示“no longer sold”，故不把它作为现行主表 SKU，只保留为历史货架证据。</p>
       </section>
 
-      <section id="goodyear" class="goodyear-section">
-        <div class="goodyear-copy"><p>02 · PRICE FORENSICS</p><h2>截图中的 Goodyear 为什么能卖到 $218.99？</h2><p>它并非仅仅卖 50ft / 12AWG / 15A。它把一个同规格产品包成“长期挂在车库、可承受环境与高频使用的固定工作站”。这使它与我方 $125 的现款不再只靠线径比较。</p><a href="https://www.homedepot.com/p/338222908" target="_blank" rel="noreferrer">打开 Goodyear GUR074 原始页 ↗</a></div>
-        <div class="price-ladder"><div><span>材料与安装</span><b>防腐钢结构 + 钢制安装底座</b><small>用户看到的是“能长期挂墙 / 顶”的硬件，而不只是塑胶卷盘。</small></div><div><span>机制与使用</span><b>弹簧回收 + 双调节</b><small>高频抽拉时的导向、锁止与回收体验被放到主卖点。</small></div><div><span>环境边界</span><b>室内 / 外使用主张</b><small>相比“室内车库”限定，它扩大了购买场景与安心感。</small></div><div><span>品牌与渠道</span><b>Goodyear + Home Depot</b><small>工业 / 汽车联想、门店背书、专业视觉共同托住价格。</small></div></div>
-        <div class="spec-duel"><div><span>Goodyear GUR074</span><strong>$218.99</strong><p>50ft · 12/3 · 15A · 3 outlets<br />钢结构 / 防腐 / 室内外</p></div><i>vs</i><div><span>我方 DE1512AWGUS</span><strong>$125.00</strong><p>50ft · 12/3 · 15A · 3 outlets<br />PP reel + metal bracket / 官方 FAQ 建议不作户外使用</p></div></div>
-        <p class="verdict">关键判断：<b>Goodyear 的高价不来自“比我方更粗的线”，而来自它把耐久、固定安装和品牌认知做成了可理解的专业升级。</b>所以我们不应把现款涨到 $200；应创建一个有硬件与验证支撑的 $129–149 Pro 版本。</p>
+      <section class="zip-section">
+        <div><p>03 · 10-ZIP UNION PROTOCOL</p><h2>避免单店缺货漏项：用十个 ZIP 的并集，而不是一个 ZIP 的截屏。</h2></div>
+        <ol><li>90250<br /><span>Los Angeles</span></li><li>85034<br /><span>Phoenix</span></li><li>98108<br /><span>Seattle</span></li><li>75240<br /><span>Dallas</span></li><li>77084<br /><span>Houston</span></li><li>34606<br /><span>Spring Hill</span></li><li>30339<br /><span>Atlanta</span></li><li>60639<br /><span>Chicago</span></li><li>55426<br /><span>Minneapolis</span></li><li>19406<br /><span>Philadelphia</span></li></ol>
+        <p class="zip-note">严格口径：某 SKU 只有在任一 ZIP 显示 Pickup / In Stock 才进入“进店主表”；“全国网页可售但十店均无 Pickup”仅作为候选，不计入进店款。零售商实时库存具有地区与时间性，本页不会伪造十店覆盖次数。</p>
       </section>
 
-      <section id="pain" class="section pain-section">
-        <div class="section-title"><p>03 · WHAT THE MARKET IS FAILING TO SOLVE</p><h2>市场产品的痛点，不在“能不能回收”，而在回收后的每一天</h2></div>
-        <div class="pain-grid"><article><b>01</b><h3>回收不顺 / 容易乱线</h3><p>Lowe’s 的 Link2Home 已把“自动导线”写入主卖点，但其已验证买家仍反馈 lead-in 太短、回收不顺。Flexzilla 的公开聚合评论也出现“回收机构失效”信号。</p><small>机会：自动导线必须可被验证，而非仅写在包装上。</small></article><article><b>02</b><h3>安装后不好用</h3><p>主流 50ft 产品都强调墙 / 顶装、180° 支架；但入门款常牺牲 lead-in、插头位置和拆装便利，安装好后仍影响使用。</p><small>机会：6ft lead-in、可选第二支架 / 快拆、明确孔距模板。</small></article><article><b>03</b><h3>“室内 / 户外”说不清</h3><p>Link2Home 采用耐油、耐 UV 的 SJTOW 线材，却在页面规格中标为 Indoor；而 Goodyear 直接主张 Indoor / Outdoor。用户需要清楚边界。</p><small>机会：用线材等级、IP / 温度、应用图清楚定义使用环境。</small></article><article><b>04</b><h3>高价专业款缺少中间档</h3><p>$80–100 是 14AWG 红海；$170–219 是钢结构 / 长线专业款。$129–149 缺少“12AWG + 明确可靠性证据”的可信选择。</p><small>机会：这是新 SKU 的实际价值带。</small></article></div>
+      <section id="gap" class="section gap">
+        <header><p>04 · WHAT THE SHELF TELLS US</p><h2>机会不在“再做一款 50ft 自动回收”，而在补齐现有产品未覆盖的购买任务。</h2></header>
+        <div class="gap-grid"><article><span>线下产品结构</span><h3>便携长线款是主赛道</h3><p>Kobalt 80ft/14-3 与 75ft/12-3 显示，线下消费者愿意为“移动供电站”购买：长线、四插口、USB、可站立、可收纳。</p></article><article><span>现有自动回收款</span><h3>只是固定车库细分</h3><p>50ft/14-3 自动回收的价格锚点已到 $69.98。它需要靠安装、回收耐久与多插口来解释，而不是靠“有自动回收”。</p></article><article><span>重载价格对比</span><h3>$140 必须交换更多价值</h3><p>在约 $140，Husky 与 Kobalt 已给到 75ft / 12-3。50ft / 12AWG 即使更精致，也会被用户直观地理解成“少 25ft”。</p></article></div>
       </section>
 
-      <section id="ours" class="ours-section">
-        <div class="ours-head"><p>04 · LOOK AT OURSELVES</p><h2>我们两款的真实位置：一款保量，一款值得升级</h2></div>
-        <div class="ours-grid"><article><div class="sku-label">现有款 A</div><h3>50ft / 14AWG / 13A</h3><strong>$84.99 · 5 outlets</strong><p>它的职责应该是守住 Home Depot $80–100 的量级位置：价格已经有竞争力、插口数也好讲。但它不应作为替换 Flexzilla 的唯一答案——对方的 SJTOW、4.5ft lead、180° 支架、品牌 / 保修使其仍然具备进店理由。</p><dl><div><dt>保留</dt><dd>低价带、5 outlets、自动回收</dd></div><div><dt>升级</dt><dd>明确 SJTOW / 耐候边界、回收耐久测试、安装资料</dd></div><div><dt>渠道角色</dt><dd>HD / 线上引流，不主打 Menards 替代</dd></div></dl></article><article class="pro-card"><div class="sku-label">现有款 B · 进化基础</div><h3>50ft / 12AWG / 15A</h3><strong>$125.00 · 3 outlets</strong><p>线径与 15A 已经正确，且价格比 Goodyear 低 $94。但 PP 卷盘、2 年保修、户外边界不清以及缺少导线/安装的可视化证据，使它更像“更粗线的消费款”，尚不足以拿下专业货架位置。</p><dl><div><dt>保留</dt><dd>50ft、12/3、15A、自动回收、现有平台</dd></div><div><dt>必须重做</dt><dd>钢制底座 / 耐腐蚀、自动排线、6ft lead、环境验证</dd></div><div><dt>渠道角色</dt><dd>升级为新 Pro SKU 的平台，而不是原样进 Menards</dd></div></dl></article></div>
+      <section id="decision" class="decision">
+        <div class="decision-copy"><p>05 · FINAL PRODUCT DECISION</p><h2>推荐新开一条产品线：<br />75ft / 12-3 Portable Power Station Reel</h2><p>这不是把现有自动回收款简单加长，而是针对线下主货架重新定义产品：移动、长线、多插口、户外 / 车库 / RV / 活动可用。现有 50ft 自动回收款继续服务墙装车库场景。</p></div>
+        <div class="spec-list"><div><span>目标价</span><b>$129.99–139.99</b><small>正面卡位 Kobalt $139.98 与 Husky $141</small></div><div><span>核心规格</span><b>75ft · 12/3 · 15A</b><small>SJTW / SJTOW，过载保护，清晰的户外使用边界</small></div><div><span>货架卖点</span><b>4 AC + USB-A / USB-C</b><small>可站立框架、舒适摇把、收线导向、照明电源指示</small></div><div><span>不做什么</span><b>不做 45ft / 12AWG 降价款</b><small>会失去 50ft / 75ft 的货架规格锚，无法赢得线下对比</small></div></div>
       </section>
 
-      <section id="recommend" class="recommend-section">
-        <div class="recommend-copy"><p>05 · SKU DECISION</p><h2>推荐新增：<br />50ft / 12AWG / 15A<br />Pro Auto-Rewind</h2><p>不是“45ft / 12AWG 便宜版”。45ft 能降成本，却会在货架上失去 50ft 的直观规格锚点，也很难解释为什么比低价 45ft/12AWG 更值得买。应做一款清晰升级、但不越级到 $200 的新款。</p></div>
-        <div class="recommend-spec"><div><span>建议零售价</span><strong>$139.99</strong><small>促销锚点 $129.99；不与 $80–100 的 14AWG 红海硬碰</small></div><div><span>必须具备</span><strong>12/3 · 15A · 50ft</strong><small>SJTOW / 清晰室内外等级、15A reset、lighted triple tap</small></div><div><span>必须可见</span><strong>钢制防腐底座</strong><small>自动排线、6ft lead、180° 支架、孔距模板、可选快拆第二支架</small></div><div><span>必须能证明</span><strong>回收寿命 + 温度 + 负载</strong><small>包装 / PDP 展示循环次数、低温柔软性、满载温升、保修年限</small></div></div>
+      <section class="section ours">
+        <header><p>06 · ROLE OF OUR CURRENT SKUS</p><h2>现有两款不是淘汰，而是回到正确赛道</h2></header>
+        <div class="roles"><article><b>现有 50ft / 14AWG / 13A</b><strong>$84.99 · 5 outlets</strong><p>定位为墙装自动回收的“量款”。与 Husky $69.98、Kobalt 约 $90 竞争。下一步不是继续降价，而是把 5 outlets、导线顺滑、安装体验、保修和线材等级讲清楚。</p></article><article><b>现有 50ft / 12AWG / 15A</b><strong>$125.00 · 3 outlets</strong><p>定位为墙装重载升级款。不要再把它当作 $140 线下旗舰：它面对的是 75ft / 12-3 对标。可继续线上验证，但若要进大卖场，应改为 75ft 平台或做成独家的墙装 Pro 方案。</p></article><article class="new"><b>新增 75ft / 12-3 Power Station</b><strong>建议 $129.99–139.99</strong><p>承担真正的线下主货架角色：以长度、线径、插口和便携性一眼可懂地对标 Kobalt / Husky；再用更好的收线手感、线材、结构和包装讲出差异。</p></article></div>
       </section>
 
-      <section class="section channel-action">
-        <div class="section-title"><p>06 · HOW TO GET IN</p><h2>不同渠道的打法不同，首推目标是 Menards 的专业空位</h2></div>
-        <div class="action-table"><div class="action-row"><b>Menards · 第一优先</b><span>用 50ft / 12AWG Pro 争取 Flexzilla 之上、Masterforce 60ft/12AWG 之下的专业补位。</span><strong>不是拿 14AWG 去替换 Flexzilla</strong></div><div class="action-row"><b>Home Depot · 第二优先</b><span>我方已有两款 online 价格基准；新款可完成从 $84.99 到 $139.99 的清晰梯度。</span><strong>用“Pro”避免与现款互相蚕食</strong></div><div class="action-row"><b>Lowe’s · 白空间验证</b><span>现有主力 50ft/14AWG 为 $119.99；50ft/12AWG 的可靠性升级有可解释空间。</span><strong>先做独家颜色 / 陈列支持</strong></div><div class="action-row"><b>Harbor Freight · 暂不投入</b><span>$44.99 的 30ft/16AWG 是价格锚，不是我们现有平台可盈利进入的战场。</span><strong>除非接受私牌成本结构</strong></div></div>
-      </section>
-
-      <section class="sources section"><p>DATA &amp; SOURCES</p><h2>所有价格与规格均可回到原始零售页核验</h2><div><a href="https://www.homedepot.com/p/338222908" target="_blank" rel="noreferrer">Home Depot · Goodyear GUR074</a><a href="https://www.homedepot.com/p/332472369" target="_blank" rel="noreferrer">Home Depot · Giraffe 50ft/12AWG</a><a href="https://www.homedepot.com/p/332472359" target="_blank" rel="noreferrer">Home Depot · Giraffe 50ft/14AWG</a><a href="https://www.lowes.com/pd/LINK2HOME-Link2Home-50-Ft-Auto-Retractable-Extension-Cord-Reel-with-3-Grounded-Outlets-Lighted-Tripe-Tap-14AWG-SJTOW-with-Overload-Protection/5015629867" target="_blank" rel="noreferrer">Lowe’s · Link2Home</a><a href="https://www.menards.com/main/dynamic-content.html?categoryId=1642874295714954" target="_blank" rel="noreferrer">Menards · Masterforce</a><a href="https://www.harborfreight.com/electrical/extension-cords-power-strips/extension-cords/30-ft-retractable-cord-reel-66832.html" target="_blank" rel="noreferrer">Harbor Freight · HFT</a><a href="https://giraffetools.com/products/retractable-extension-cord-reel-12-14-16-awg?variant=40943992832059" target="_blank" rel="noreferrer">Giraffe Tools official page</a></div><small>说明：零售价与库存按地区、促销和抓取时间变化。Flexzilla / Menards 行的 $139.99 为公开 list price，Menards 页面实际为门店动态价；其中“进店原因、机会位、推荐价格”均为分析结论而非零售商宣称。</small></section>
+      <footer><p>DATA &amp; METHOD</p><div><a href="https://www.lowes.com/pd/Kobalt-4-outlet-Kobalt-Black-blue-Cord-Reel-2-USB-W-80ft-14-3-SJTW-Ext-Cord/5001962679" target="_blank" rel="noreferrer">Lowe’s Kobalt 80ft/14-3</a><a href="https://www.lowes.com/pd/Kobalt-4-outlet-Portable-Thermoplastic-Power-Station-Cord-Reel-W-75ft-12-3-Yellow-Sjtw-Cord-with-1-Usb-a-and-1-Usb-c/5014577373" target="_blank" rel="noreferrer">Lowe’s Kobalt 75ft/12-3</a><a href="https://www.lowes.com/pd/Kobalt-Kobalt-50-Ft-Retractable-Cord-Reel/1002788012" target="_blank" rel="noreferrer">Lowe’s Kobalt 50ft retractable</a><a href="https://www.homedepot.com/b/Electrical-Electrical-Cords-Extension-Cords-Extension-Cord-Reels/Husky/Indoor-Outdoor/N-5yc1vZc5blZrdZ1z11evg" target="_blank" rel="noreferrer">Home Depot Husky reels</a><a href="https://giraffetools.com/products/retractable-extension-cord-reel-12-14-16-awg?variant=40943992832059" target="_blank" rel="noreferrer">Giraffe Tools official</a></div><small>截图来自用户提供的 Lowe’s 90250 与 Home Depot 34606 搜索页。价格为截图或官网抓取时可见值；SKU 是否进店以门店实时 Pickup 为准。本页将“实际门店证据”与“网页存在”严格区分。</small></footer>
     </main>
   </body>
 </html>
